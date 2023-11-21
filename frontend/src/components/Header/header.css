@@ -40,7 +40,6 @@
   z-index: 999;
 }
 
-//responsiveness
 @media only screen and (max-width: 992px) {
   .logo img {
     width: 20%;

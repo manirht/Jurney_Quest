@@ -13,6 +13,8 @@ import experienceImg from "../../assets/images/experience.png";
 import MasonryImagesGallery from "../image-gallery/MasonryImagesGallery";
 import Testimonials from "../Testimonial/Testimonials";
 import NewsLetter from "../shared/NewsLetter";
+import { TypeAnimation } from "react-type-animation";
+
 const Home = () => {
   return (
     <>
@@ -25,10 +27,27 @@ const Home = () => {
                   <Subtitle subtitle={"Know Before You Go!"} />
                   <img src={worldImg} alt="world" />
                 </div>
-                <h1>
+                <h2 className="fs-bold h2">Travelling opens the door to creating</h2>
+                <span className="h2"><TypeAnimation
+                  sequence={[
+                  ``,
+                    2000,
+                    `Memories`,
+                    2000,
+                  ]}
+                  repeat={Infinity}
+                  cursor={true}
+                  style={{
+                    whiteSpace: "pre-line",
+                    display: "inline-block",
+                    fontSize: "30px",
+                  }}
+                  omitDeletionAnimation={true}
+                /></span>
+                {/* <h1>
                   Travelling opens the door to creating{" "}
                   <span className="highlight">memories</span>
-                </h1>
+                </h1> */}
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Repellendus dolor placeat illo dicta? Eaque hic odit animi
