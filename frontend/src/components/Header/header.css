@@ -5,7 +5,8 @@
 }
 
 .logo img {
-  width: 30%;
+  width:15%;
+  scale: 1;
 }
 .menu {
   margin-bottom: 0;
