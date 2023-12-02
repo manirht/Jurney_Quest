@@ -8,20 +8,21 @@ import customizationImg from "../assets/images/customization.png";
 const ServicesData = [
   {
     imgUrl: weatherImg,
-    title: "calculate weather",
-    desc: "lorem ipsum dolor sit amet, consectetur adip",
+    title: "Real-time Weather Forecasts",
+    desc: "Stay prepared with accurate weather updates to ensure perfect travel experiences, come rain or shine.",
   },
   {
     imgUrl: guideImg,
-    title: "Best Tour Guide",
-    desc: "lorem ipsum dolor sit amet, consectetur adip",
+    title: "Expert Tour Guides",
+    desc: "Explore with local experts who bring stories to life, offer insider insights, and personalize your journey.",
   },
   {
     imgUrl: customizationImg,
-    title: "customizaton",
-    desc: "lorem ipsum dolor sit amet, consectetur adip",
+    title: "Tailored Itineraries",
+    desc: "Craft the perfect trip that caters to your tastes, preferences, and dreams, for an adventure that’s uniquely yours.",
   },
 ];
+
 const ServiceList = () => {
   return (
     <>

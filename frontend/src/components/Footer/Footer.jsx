@@ -3,6 +3,7 @@ import "./footer.css";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 import { Link } from "react-router-dom";
 import logo from "./../../assets/images/logo.png";
+
 const quick__links = [
   {
     path: "/home",
@@ -32,6 +33,7 @@ const quick__links2 = [
     display: "Register",
   },
 ];
+
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
@@ -40,31 +42,29 @@ const Footer = () => {
         <Row>
           <Col lg="3">
             <div className="logo">
-              <img src={logo} alt="" />
-
+              <img src={logo} alt="logo" />
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                asperiores inventore, quos pariatur, repudiandae quisquam
+                Join us for enchanting tours and explore breathtaking landscapes across the globe. Experience the best of travel with our expert guides and curated itineraries.
               </p>
               <div className="social__links d-flex align-items-center gap-4">
                 <span>
                   <Link to="#">
-                    <i class="ri-youtube-line"></i>
+                    <i className="ri-youtube-line"></i>
                   </Link>
                 </span>
                 <span>
                   <Link to="#">
-                    <i class="ri-github-line"></i>
+                    <i className="ri-github-line"></i>
                   </Link>
                 </span>
                 <span>
                   <Link to="#">
-                    <i class="ri-facebook-circle-line"></i>
+                    <i className="ri-facebook-circle-line"></i>
                   </Link>
                 </span>
                 <span>
                   <Link to="#">
-                    <i class="ri-instagram-line"></i>
+                    <i className="ri-instagram-line"></i>
                   </Link>
                 </span>
               </div>
@@ -96,37 +96,35 @@ const Footer = () => {
               <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
                 <h6 className="mb-0 d-flex align-items-center gap-2">
                   <span>
-                    <i class="ri-map-pin-line"></i>
+                    <i className="ri-map-pin-line"></i>
                   </span>
                   Address:
                 </h6>
                 <p className="mb-0">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                  corporis sed neque.
+                  Explore the world with us from anywhere at any time.
                 </p>
               </ListGroupItem>
               <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
                 <h6 className="mb-0 d-flex align-items-center gap-2">
                   <span>
-                    <i class="ri-mail-line"></i>
+                    <i className="ri-mail-line"></i>
                   </span>
                   Email:
                 </h6>
                 <p className="mb-0">
-                  lcb2022017@iiitl.ac.in <br /> lcb20220322@iiitl.ac.in <br />
-                  iit2022038@iiitl.ac.in
+                  contact@travelworld.com
                 </p>
               </ListGroupItem>
               <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
                 <h6 className="mb-0 d-flex align-items-center gap-2">
                   <span>
-                    <i class="ri-phone-fill"></i>
+                    <i className="ri-phone-fill"></i>
                   </span>
                   Phone:
                 </h6>
                 <p className="mb-0">
-                  +91 7075812083 <br /> +91 8074222591 <br />
-                  +91 9944099546
+                  +1 234 567 8900 <br />
+                  +1 234 567 8911
                 </p>
               </ListGroupItem>
             </ListGroup>
@@ -134,9 +132,9 @@ const Footer = () => {
           <Col lg="12" className="text-center pt-5">
             <p className="copyright">
               <span>
-                <i class="ri-copyright-line"></i>
+                <i className="ri-copyright-line"></i>
               </span>{" "}
-              Copyright {year}, All rights reserved
+              © {year}, All rights reserved by TravelWorld
             </p>
           </Col>
         </Row>
