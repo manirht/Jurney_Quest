@@ -43,9 +43,9 @@ const Booking = ({ tour, avgRating }) => {
 
       const result = await res.json();
       console.log("Result:", result);
-      if (!res.ok) {
-        alert(result.message);
-      }
+      // if (!res.ok) {
+      //   alert(result.message);
+      // }
     } catch (err) {
       alert(err.message);
     }
@@ -55,7 +55,7 @@ const Booking = ({ tour, avgRating }) => {
     <div className="booking">
       <div className="booking__top d-flex align-items-center justify-content-between">
         <h3>
-          {price}
+          ${price}
           <span>/per person</span>
         </h3>
         <span className="tour__rating d-flex align-items-center ">
