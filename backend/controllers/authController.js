@@ -34,6 +34,7 @@ export const login = async (req, res) => {
         .status(404)
         .json({ success: false, message: "User not found" });
     }
+    console.log(user);
     //user exist then check password
     const checkCorrectPassword = await bcrypt.compare(
       req.body.password,
@@ -41,9 +42,9 @@ export const login = async (req, res) => {
     );
 
     //if password is incorrect
-    if (!checkCorrectPassword) {
+    if (checkCorrectPassword) {
       return res
-        .status(401)
+        .status(403)
         .json({ success: false, message: "invalid password or email" });
     }
     const { password, role, ...rest } = user._doc;
